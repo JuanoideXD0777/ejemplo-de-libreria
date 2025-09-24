@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class Autor
+    internal interface Irepo
     {
-        public int ID { get; set; }
-        public string Nombre { get; set; }
+        List<object> ObtenerDatos();
+        List<object> CargarDatos();
     }
 }

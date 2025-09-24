@@ -45,8 +45,14 @@
   <ItemGroup>
     <Compile Include="Categoria.cs" />
     <Compile Include="Autor.cs" />
+    <Compile Include="Bibliotecario.cs" />
+    <Compile Include="catrepo.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="Editorial.cs" />
+    <Compile Include="Irepo.cs" />
+    <Compile Include="librepo.cs" />
     <Compile Include="Libros.cs" />
+    <Compile Include="Prestamo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

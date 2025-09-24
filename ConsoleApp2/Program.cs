@@ -10,6 +10,17 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            List<Libros> libros = librepo.ObtnerLibros();
+            foreach (Libros libro in libros)
+            {
+                Console.WriteLine(libro.Titulo);
+            }
+
+            List<Categoria> categorias = catrepo.Obtcategoria();
+            foreach (Categoria c in categorias)
+            {
+                Console.WriteLine($"Categorias: {c.Nombre}");
+            }
         }
     }
 }

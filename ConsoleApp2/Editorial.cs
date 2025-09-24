@@ -8,5 +8,7 @@ namespace ConsoleApp2
 {
     internal class Editorial
     {
+        public int ID { get; set;}
+        public string Nombre { get; set;}
     }
 }

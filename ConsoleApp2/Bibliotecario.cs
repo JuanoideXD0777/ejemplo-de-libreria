@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class Autor
+    internal class Bibliotecario
     {
-        public int ID { get; set; }
-        public string Nombre { get; set; }
+        public int ID {  get; set; }
+        public string Name { get; set; }
     }
 }

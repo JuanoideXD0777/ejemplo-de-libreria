@@ -9,7 +9,7 @@ namespace ConsoleApp2
     internal class Libros
     {
         public int ID { get; set; }
-        public string Nombre { get; set; }    
+        public string Titulo { get; set; }    
         public DateTime Fecha { get; set; }
         public int Paginas { get; set; }
         public Categoria Categoria { get; set; }

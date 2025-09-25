@@ -48,6 +48,7 @@
     <Compile Include="Bibliotecario.cs" />
     <Compile Include="catrepo.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="clirepo.cs" />
     <Compile Include="Editorial.cs" />
     <Compile Include="Irepo.cs" />
     <Compile Include="librepo.cs" />

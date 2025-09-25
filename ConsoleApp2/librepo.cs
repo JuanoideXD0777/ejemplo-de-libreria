@@ -69,5 +69,11 @@ namespace ConsoleApp2
             };
             lista.Add(lib2);
         }
+        public static Libros IDsrch(int idlib)
+        {
+            //List<Product> namedProducts = products.Find(p => p.Name == "Mouse");
+            Llenarlibros();
+            return lista.Find(l => l.ID == idlib);
+        }
     }
 }

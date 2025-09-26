@@ -24,19 +24,19 @@ namespace ConsoleApp2
             _lista.Add(Cat);
             Categoria Cato = new Categoria
             {
-                ID = 1,
+                ID = 2,
                 Nombre = "drama"
             };
             _lista.Add(Cato);
             Categoria Cati = new Categoria
             {
-                ID = 1,
+                ID = 3,
                 Nombre = "comedia"
             };
             _lista.Add(Cati);
             Categoria Catei = new Categoria
             {
-                ID = 1,
+                ID = 4,
                 Nombre = "documental"
             };
             _lista.Add(Catei);

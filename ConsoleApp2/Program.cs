@@ -28,6 +28,7 @@ namespace ConsoleApp2
                 Console.WriteLine($"{cliente.ID}-{cliente.Nombre}");
             }*/
 
+            /*
             List<Prestamo> prestamos = new List<Prestamo>();
             Prestamo prestamo = new Prestamo();
             Libros libs = null;
@@ -121,6 +122,72 @@ namespace ConsoleApp2
                 }
             }
             while (opcion > 0);
+            */
+
+            Console.WriteLine("Ordenamiento por seleccion");
+            int[] Seleccion = { 23, 4, 78, 2, 99, 11, 5, 12, 31, 52, 7, 3, 1 };
+            Console.WriteLine("Lista");
+            foreach (int i in Seleccion)
+            {
+                Console.Write($"{i},");
+            }
+            int n = Seleccion.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                int min_index = i;
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (Seleccion[j] < Seleccion[min_index])
+                    {
+                        min_index = j;
+                    }
+                }
+                int min_value = Seleccion[min_index];
+                for (int k = min_index; k > i; k--)
+                {
+                    Seleccion[k] = Seleccion[k - 1];
+                }
+                Seleccion[i] = min_value;
+            }
+            Console.WriteLine("\nlista ordenada");
+            foreach (int i in Seleccion)
+            {
+                Console.Write($"{i},");
+            }
+            Console.WriteLine("");
+
+            int[] arr = { 3, 5, 8, 6, 5, 9, 2, 3, 5 };       //es la lista
+            int nt = arr.Length;                             //mide la cantidad de numeros dentro del arreglo
+            bool swapped;                                   //establece un tope para el loop
+
+            Console.WriteLine("\nordenamiento por burbuja");
+            Console.WriteLine("Lista:");
+            foreach (int i in arr)                        //imprime la lista
+            {
+                Console.Write($"{i},");
+            }
+            Console.WriteLine("\n");
+            do
+            {
+                swapped = false;
+                for (int i = 0; i < nt - 1; i++)
+                {
+                    if (arr[i] > arr[i + 1])
+                    {
+                        // Intercambiar arr[i] y arr[i+1]
+                        int temp = arr[i];
+                        arr[i] = arr[i + 1];
+                        arr[i + 1] = temp;
+                        swapped = true;
+
+                        foreach (int j in arr)
+                        {
+                            Console.Write($"{j},");
+                        }
+                        Console.WriteLine("\n");
+                    }
+                }
+            } while (swapped);
         }
     }
 }

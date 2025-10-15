@@ -32,7 +32,7 @@ namespace primer_forms
                 MessageBox.Show("Ingrese todos los datos");
             }
             bibliotecario usuario = logrepo.Login2(username, password);
-            if (usuario.ID > 0)
+            if (usuario.ID >0)
             {
                 Menu menu = new Menu(usuario);
                 menu.Show();

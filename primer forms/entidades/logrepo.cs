@@ -41,7 +41,7 @@ namespace primer_forms.entidades
             bibliotecario usuario = new bibliotecario();
             usuario.ID = 0;
             MySqlConnection conn = new MySqlConnection("server=127.0.0.1;port=3312;uid=root;pwd=;database=libros;");
-            MySqlCommand comm = new MySqlCommand($"SELECT * FROM `usuarios` WHERE `Nombre`= concat(\"%\",\"{username}\",\"%\") AND `Contraseña` = concat(\"%\",\"{password}\",\"%\");", conn);
+            MySqlCommand comm = new MySqlCommand($"SELECT * FROM `usuarios` WHERE `Nombre`= '{username}' AND `Contraseña` = '{password}';", conn);
             comm.CommandType = System.Data.CommandType.Text;
             try
             {
